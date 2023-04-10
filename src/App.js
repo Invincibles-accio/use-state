@@ -1,25 +1,12 @@
-import React,{useState} from 'react';
- // count = 0 ,  setCount is a function (inbuilt)
-          // x = > array of two elements
+// import React,{useState} from 'react';
+import UseState4 from "./Components/UseState4";
+ 
 const App = () => {
-          let [count, setCount]  = useState(0) // 1
-          console.log("I loaded again")  // why it is loading twice
-          let a = 10 
-         function increaseCount(){
-             console.log("I am getting accessed")
-              setCount(count+1) // count = 1
-              // setCount(count+1) // count = 2
-              a = a+1 // 11
-              console.log("inside function ", a) // 11
-         }
-         console.log("outside function",a)
-
-  return (
-    <div>
-         <h1> {count} </h1>
-         <button onClick={increaseCount}> Increase </button>
-    </div>
-  );
+        return (
+            <div>
+                <UseState4 />
+            </div>
+      )
 }
 
 export default App;
